@@ -1,20 +1,12 @@
-Use this starter if you want to give Code Hike v1.0 a try:
+This is a demo Next.js application including Fumadocs and Code Hike.
+
+- [Live demo](https://ch-with-fumadocs.vercel.app/)
+- [Code Hike](https://codehike.org) - learn about Code Hike
+- [Fumadocs](https://fumadocs.vercel.app) - learn about Fumadocs
+
+Clone it with:
 
 ```bash
-npx create-next-app -e https://github.com/code-hike/v1-starter
+$ npx degit code-hike/examples/with-fumadocs my-docs
+$ cd my-docs
 ```
-
-Or you can also try it on:
-
-- [StackBlitz](https://stackblitz.com/github/code-hike/v1-starter?file=app%2Fpage.mdx)
-- [CodeSandbox](https://codesandbox.io/s/github/code-hike/v1-starter?file=app%2Fpage.mdx)
-
-It includes:
-
-- Next.js 14 with app router
-- Tailwind CSS + @tailwindcss/typography
-- TypeScript
-- MDX
-- Code Hike v1.0
-
-For more information, check out the [Code Hike docs](https://codehike.org/docs).

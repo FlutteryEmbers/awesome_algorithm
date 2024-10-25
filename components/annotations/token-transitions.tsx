@@ -1,5 +1,3 @@
-// from: https://codehike.org/docs/code/token-transitions
-
 import { AnnotationHandler, InnerToken } from "codehike/code"
 import { SmoothPre } from "./token-transitions.client"
 

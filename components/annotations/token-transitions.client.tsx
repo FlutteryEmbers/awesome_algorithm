@@ -28,7 +28,7 @@ export class SmoothPre extends React.Component<CustomPreProps> {
   componentDidUpdate(
     prevProps: never,
     prevState: never,
-    snapshot: TokenTransitionsSnapshot,
+    snapshot: TokenTransitionsSnapshot
   ) {
     const transitions = calculateTransitions(this.ref.current!, snapshot)
     transitions.forEach(({ element, keyframes, options }) => {
