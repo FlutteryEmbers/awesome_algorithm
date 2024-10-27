@@ -1,0 +1,51 @@
+---
+title: String Manipulation in Java
+description: A guide to common string manipulation techniques in Java.
+---
+
+```java
+
+// Example: Initializing a string
+// !callout[/String text/] In this example, we create a String variable named `text` with the value `"Hello, World!"`. Java strings are immutable, so any modification will result in a new string.
+String text = "Hello, World!";
+// !focus(1:3)
+
+// Example: Converting to uppercase
+// !callout[/text.toUpperCase()/] The `toUpperCase()` method converts all characters in the string to uppercase. The original string remains unchanged.
+String upperText = text.toUpperCase();  // returns "HELLO, WORLD!"
+
+// Example: Converting to lowercase
+// !callout[/text.toLowerCase()/] The `toLowerCase()` method converts all characters in the string to lowercase, returning a new string.
+String lowerText = text.toLowerCase();  // returns "hello, world!"
+
+// Example: Replacing a substring
+// !callout[/text.replace/] The `replace()` method substitutes all occurrences of the specified substring ("World") with a new substring ("Java"). It returns a new string.
+String replacedText = text.replace("World", "Java");  // returns "Hello, Java!"
+
+// Example: Splitting a string into an array
+// !callout[/text.split/] The `split()` method divides the string into an array of substrings based on the specified delimiter (", "). Each element in the resulting array is a substring from the original string.
+String[] words = text.split(", ");  // returns ["Hello", "World!"]
+
+// Example: Joining an array into a string (using String.join)
+// !callout[/String.join/] The `String.join()` method concatenates the elements of the provided array into a single string, separated by the specified delimiter (" - ").
+String joinedText = String.join(" - ", words);  // returns "Hello - World!"
+
+// Example: Checking if a string starts with a substring
+// !callout[/text.startsWith/] The `startsWith()` method checks if the string begins with the specified prefix ("Hello"), returning `true` or `false`.
+boolean startsWithHello = text.startsWith("Hello");  // returns true
+
+// Example: Checking if a string ends with a substring
+// !callout[/text.endsWith/] The `endsWith()` method checks if the string ends with the specified suffix ("!"), returning `true` if it does and `false` otherwise.
+boolean endsWithExclamation = text.endsWith("!");  // returns true
+
+// Example: Stripping whitespace from a string
+String whitespaceText = "   Hello, World!   ";
+// !callout[/whitespaceText.trim()/] The `trim()` method removes leading and trailing whitespace from the string, returning a new string without the extra spaces.
+String strippedText = whitespaceText.trim();
+
+```
+
+Suggested Readings:
+
+- [Related Interview Questions](https://codehike.org/docs)
+- [Other Coding Resources](https://fumadocs.vercel.app)
